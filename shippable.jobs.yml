@@ -9,4 +9,4 @@ jobs:
     type: dclDeploy
     steps:
       - GET: box-man
-      - GET: dcl-cluster
+      - GET: env-dcl
