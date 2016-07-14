@@ -17,8 +17,8 @@ resources:
     initialVersion:
       versionName: "dc.pipeline.3"
 
-  - name: env-dcl
-    type: dclCluster
-    integration: pranay-dcl
+  - name: env-ddc
+    type: ddcCluster
+    integration: pranay-ddc
     pointer:
-     sourceName : "cluster-dcl"
+     sourceName : "cluster-ddc"
