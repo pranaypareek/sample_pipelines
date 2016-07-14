@@ -5,8 +5,8 @@ jobs:
       - GET: box-sn
       - GET: trigger-dv-man
 
-  - name: dcl-upgrade-deploy
-    type: dclDeploy
+  - name: ddc-upgrade-deploy
+    type: ddcDeploy
     steps:
       - GET: box-man
-      - GET: env-dcl
+      - GET: env-ddc
