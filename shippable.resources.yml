@@ -1,7 +1,7 @@
 resources:
   - name: box-nginx
     type: image
-    integration: jatin-docker
+    integration: pranay-docker
     pointer:
       sourceName: "library/nginx"
       isPull: false
@@ -10,22 +10,15 @@ resources:
       
   - name: box-sn
     type: image
-    integration: jatin-docker
+    integration: pranay-docker
     pointer:
       sourceName: "scriptnull/sample_node"
       isPull: false
     initialVersion:
       versionName: "dc.pipeline.3"
 
-  - name: ecs-cluster
-    type: ecsCluster
-    integration: jatin-aws
-    pointer:
-      sourceName : "testCL"
-      region: "us-west-2"
-
   - name: env-dcl
     type: dclCluster
-    integration: jatin-dcl
+    integration: pranay-dcl
     pointer:
      sourceName : "cluster-dcl"
