@@ -2,7 +2,7 @@ jobs:
   - name: box-man
     type: manifest
     steps:
-      - GET: box-nginx
+      - GET: box-sn
       - GET: trigger-dv-man
 
   - name: dcl-upgrade-deploy
