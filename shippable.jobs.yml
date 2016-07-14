@@ -1,12 +1,12 @@
 jobs:
-  - name: box-man
+  - name: box-man-1
     type: manifest
     steps:
       - GET: box-sn
       - GET: trigger-dv-man
 
-  - name: ddc-upgrade-deploy
+  - name: ddc-upgrade-deploy-1
     type: ddcDeploy
     steps:
-      - GET: box-man
+      - GET: box-man-1
       - GET: env-ddc
